@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+## Bioinformatics School's Project
 
-You can use the [editor on GitHub](https://github.com/s-andrews/bioinfschool/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This is a set of documentation for a long-running project designed to give a practical introduction to several areas of IT, computer science and bioinformatics to children of secondary school age (roughly 12 - 16 years old).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The project was originally covceived to run as an after-school club, run in one hour sessions over several weeks.  The course is largely modular so you can choose to include or exclude parts as you see fit.
 
-### Markdown
+In it's original version this project was run by distributing customised raspberry pi computers to each student so they had an isolated environment they could work in, and take away with them.  Most of the project could be run on other hardware platforms with minimal modification.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Areas covered in the project
 
-```markdown
-Syntax highlighted code block
+1. Hardware - using the Raspberry Pi to illustrate the different parts of the standard PC architecture
 
-# Header 1
-## Header 2
-### Header 3
+2. Networking - building a small, isolated network to illustrate the basic principles of Ethernet / IPv4 networking
 
-- Bulleted
-- List
+4. Markup languages - Using a web server running on each machine the students will construct a small, static HTML/CSS based site to construct a localised version of the world wide web.
 
-1. Numbered
-2. List
+5. Programming - students attending the course will generally have had some exposure to basic programming concepts in their taught classes.  Here we expand on these and get them to construct some simple command line python programs to solve increasingly complex problems.
 
-**Bold** and _Italic_ and `Code` text
+6. Dynamic web sites - we combine the knowledge the students gained in sections 4 and 5 to get them to write a simple python CGI script in order to generate a dynamic web site.
 
-[Link](url) and ![Image](src)
-```
+7. Final project - we provide a number of suggestions for more complex bioinformatics projects which the students can undertake.  In each case they can divide the project into coding an analysis tool, designing a web site to collect information and present results, and then linking the two together to make a dynamic web based tool.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+# Hardware used
 
-### Jekyll Themes
+In the initial running of this project the hardware we used was:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/s-andrews/bioinfschool/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+1. Around 30 raspberry pi 3 machines.  We used the starter kits so that each child had not only the pi itself, but also a keyboard, mouse, power supply, HDMI cable and Ethernet cable.  Displays were either provided by a school computing lab, or donated by local busineses or normal household televisions could be used.
 
-### Support or Contact
+2. Network switches. In our case we constructed a routing network by making two initially isolated networks of around 15 pis each before joining them together to create a mini internet.  Each sub-network used a 16 port network switch.  These can be bought cheaply, or older, slower switches are easily obtained from local companies.
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+3. A small server for the instructor.  We used a mini-itx dual network port box to provide network services (DNS, DHCP and routing).  We could also link this machine to a projector to show presentations.  If you're not using a routing network then you could simply use another raspberry pi for this purpose.
