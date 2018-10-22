@@ -13,7 +13,7 @@ def main():
         print_query_form()
 
 def read_references():
-    reffile = os.path.join(os.path.dirname(__file__),"../Data/reference_sequences.txt")
+    reffile = os.path.join(os.path.dirname(__file__),"../../Data/reference_sequences.txt")
 
     references = []
 
@@ -46,14 +46,14 @@ def search_sequence(sequence):
     return None
 
 def print_query_form():
-    template = os.path.join(os.path.dirname(__file__),"../Templates/beefburger_input.html")
+    template = os.path.join(os.path.dirname(__file__),"../../Templates/beefburger_input.html")
 
     with open(template) as file:
         for line in file:
             print(line)
 
 def print_answer(answer):
-    template = os.path.join(os.path.dirname(__file__),"../Templates/beefburger_answer.html")
+    template = os.path.join(os.path.dirname(__file__),"../../Templates/beefburger_answer.html")
 
     template_text = ""
     with open(template) as file:

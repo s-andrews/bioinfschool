@@ -13,7 +13,7 @@ def main():
         print_query_form()
 
 def read_translation_table():
-    translation_file = os.path.join(os.path.dirname(__file__),"../Data/translation_table.txt")
+    translation_file = os.path.join(os.path.dirname(__file__),"../../Data/translation_table.txt")
 
     translation_table = {}
 
@@ -48,7 +48,7 @@ def translate (sequence):
 
 
 def read_gene():
-    reffile = os.path.join(os.path.dirname(__file__),"../Data/transcript_sequence.txt")
+    reffile = os.path.join(os.path.dirname(__file__),"../../Data/transcript_sequence.txt")
 
     sequence = ""
 
@@ -85,14 +85,14 @@ def find_mutation_effect(mutation):
         return("protein coding change")
 
 def print_query_form():
-    template = os.path.join(os.path.dirname(__file__),"../Templates/resistance_input.html")
+    template = os.path.join(os.path.dirname(__file__),"../../Templates/resistance_input.html")
 
     with open(template) as file:
         for line in file:
             print(line)
 
 def print_answer(answer):
-    template = os.path.join(os.path.dirname(__file__),"../Templates/resistance_answer.html")
+    template = os.path.join(os.path.dirname(__file__),"../../Templates/resistance_answer.html")
 
     template_text = ""
     with open(template) as file:
