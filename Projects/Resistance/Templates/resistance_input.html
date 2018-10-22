@@ -2,12 +2,43 @@ Content-type: text/html
 
 <html>
 
+<head>
+  <title>Will my antibiotic still work?</title>
+  <link rel="stylesheet" type="text/css" href="../css/resistance.css">
+</head>
+
 <body>
 
-<h1>Will my antibiotic still work</h1>
+<h1>Will my antibiotic still work?</h1>
+
+<p>
+  This tool analyses mutations in the beta-lactamase gene which
+  can confer resistance to beta-lactam antibiotics (such as
+  penecillin) to bacterial which express it.
+</p>
+
+<p>
+  In the box below you can enter a DNA mutation in the
+  beta lactamase coding sequence and the program will work out
+  whether this will cause a change in the protein produced.  If the
+  protein changes then the program will say whether it is an amino
+  acid substitution, or whether the introduction of a premature stop
+  codon would cause the entire protein to be truncated.
+</p>
+
+<p>
+  The form of the mutation string must be:
+</p>
+<p class="large">
+  [original base][base position][new base]
+</p>
+<p>
+  eg G3A would be a change of G in position
+  3 to be A.
+</p>
 
 <form action="#">
-<p>
+<p class="query">
   Enter mutation (eg G3A):<input type="text" name="mutation">
 </p>
 

@@ -1,8 +1,9 @@
 #!C:/Program Files/Python36/Python
 import cgi
 import cgitb
-#cgitb.enable()
+cgitb.enable()
 import os
+import re
 
 def main():
     form = cgi.FieldStorage()
@@ -70,9 +71,22 @@ def find_mutation_effect(mutation):
     transcript_sequence = read_gene()
     protein_sequence = translate(transcript_sequence)
 
-    mutated_sequence = transcript_sequence
+    mut_pattern = re.compile("([GATC])(\d+)([GATC])")
 
-    #TODO apply the mutation
+    mut_match = mut_pattern.match(mutation)
+
+    # TODO: Check for a mut_match
+
+    start_base = mut_match.group(1)
+    mut_position = int(mut_match.group(2))
+    end_base = mut_match.group(3)
+
+    mutable_sequence = list(transcript_sequence)
+
+    mutable_sequence[mut_position] = end_base
+
+    mutated_sequence = "".join(mutable_sequence)
+
     mutated_protein = translate(mutated_sequence)
 
     if protein_sequence == mutated_protein:

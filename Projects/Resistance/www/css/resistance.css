@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  background: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 400%;
+  color: #CC0000;
+}
+
+p {
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 100%;
+  color: black;
+}
+
+p.query {
+  font-size: 150%;
+  margin: 3em;
+}
+
+p.large {
+  font-size: 200%;
+}
