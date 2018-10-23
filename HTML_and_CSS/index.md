@@ -48,3 +48,25 @@ over how their information is presented.  To make sure that there is a
 clear separation of the marking up of information (using HTML), a separate
 layer of annotation based on presentation was added, using a concept called
 Casscading Style Sheets (CSS).
+
+
+CSS
+---
+
+Cascading Style Sheets are the offically sanctioned way for the author
+of an HTML page to provide rendering suggestions to the client on which it
+is to be displayed.  The client is free to ignore these suggestions, but in
+practice most people don't change the default presentation so they end up
+seeing roughly what the original author intended.
+
+The structure of CSS files is unrelated to HTML, they are separate languages
+with different syntax.  The point of CSS is to provide presentation methods
+for different types of content, as marked up in an HTML document.  For
+example an HTML document might define a level 2 header, and there may be
+several instances of this scattered through the document.  An accompanying
+CSS file might suggest that this type of header is rendered in a specific
+font, that the text be centered on the page, shown in 20 point font and
+coloured dark red.
+
+CSS information can be embedded within an HTML document, but more commonly
+it is stored in a separate file which is then linked to the HTML files.
