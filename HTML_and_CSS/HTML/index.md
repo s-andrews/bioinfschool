@@ -86,9 +86,56 @@ There are a lot of markup tags in HTML, but you only really need to know
 a small number in order to correctly be able to mark up most common documents.
 
 ### Text information
+The main function of HTML is to describe the nature of the text parts of
+a document.  There are several HTML tags which can help with this.
 
-### Images and Videos
+**Paragraphs**```<p> ... </p>```
+Most text should be enclosed in paragraph tags. These are the basic
+textual tag. Most formatting in the text in an HTML document is ignored,
+including newlines.  If you want to have a line break in your text then
+the usual mechanism is to end one paragraph block and start another.
+
+**Headings**```<h1> ... </h1> <h2> ... </h2>```
+If you have headings for different sections of your document then you
+would use the heading tags to denote these.  The number associated with
+the tag says what level of heading you're using, with ```<h1>``` being
+a main top level heading and ```<h2>``` being a lower, second level
+heading.
+
+Headings are not contained within paragraphs.  You'd close the
+paragraph before opening the heading tag.
+
+**Emphasis**```<strong> ... </strong>   <em> ... </em>```
+Sometimes you want to indicate that a few words within a paragraph
+are particularly important and should be rendered differently to the
+surrounding text.  There are two types of tag which you can use to
+indicate this.
+
+The ```<strong>``` tag is where you want a piece of text to stand out
+from the text around it.  In a graphical browser it would normally
+be expected to be rendered in bold text, but this isn't guaranteed.
+
+The ```<em>``` (emphasis) tag is normally used to indicate that a
+stress should be placed on certain works.  In a graphical browser
+it would normally be rendered in italics, but this isn't guaranteed.
+
+Importantly, these types of tags are designed to sit within a
+paragraph block (in contrast to something like headings). So the
+correct structure for using these tags would be.
+
+```
+<p>
+  This is a paragraph I'm writing. <em>This</em> is an important
+  word I want to stress. <strong>It's important I don't close the
+  paragraph tag when I use these tags</strong>.
+</p>
+```
+
+
+### Lists
 
 ### Tables
+
+### Images and Videos
 
 ### Links
