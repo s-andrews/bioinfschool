@@ -249,7 +249,7 @@ a document.  We're assuming for the purposes of this example that we've
 copied the image file ```babraham.png``` into the same directory on our
 web server as the HTML document we're writing.
 
-![Babraham Bioinformatics Logo][babraham.png]
+![Babraham Bioinformatics Logo](babraham.png)
 
 To insert this into the document we need to use an ```<img>``` tag.  We will
 need to provide an option to this tag though to say where it can be found.  This
