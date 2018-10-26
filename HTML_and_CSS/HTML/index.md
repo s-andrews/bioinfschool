@@ -229,6 +229,51 @@ Thus, the overall structure of a table would look like this:
 |Content 3     | Content 4      |
 
 
+### Links
+Navigation around the WWW is built on the concept of hyperlinks.  These are
+a way that your viewers can jump from one page to another, either within your
+own site, or going to somewhere completely different elsewhere on the web.
+
+Links are used in serveral places within HTML.  We will see in a second that
+links form the basis for including images and videos within pages, and we'll
+also see that links are used to add styling to pages through the use of CSS.
+They are a general mechanism to assemble content from different places into
+the final document which the user sees.
+
+In this section though we are going to focus on navigation links - pieces of
+text which cause you to navigate away from the current HTML document and go
+somewhere else on the web when you click on them.
+
+Navigation links are constructed using anchor tags ```<a> ... </a>```.  Between
+the tags you can put whatever content you like - most commonly text, but it
+could equally be an image.  The point is that whatever comes between the tags
+is the content which will activate the link when you click on it.
+
+The anchor tags require you to provide some additional information though,
+specifically they need to know where the link should take the user, and this
+is achieved through the use of the href attribute.  The value for this attribute
+will be the location the link points to and must be a URL (web address).  These
+URLs can either be complete web addresses such as ```https://www.google.com```
+or, if you're just pointing to somewhere else within your own site they can
+be locations relative to the current page, eg ```../HTML_and_CSS/index.html```
+(that would be the folder above this one (```..```), then down into the ```HTML_and_CSS```
+folder, and then link to the index.html document).
+
+A complete link would therefore look something like this;
+
+```
+<p>
+  Maybe you should visit
+  <a href="https://www.bioinformatics.babraham.ac.uk">Babraham Bioinformatics</a>
+  to learn more about bioinformatics?
+</p>
+```
+
+..and it would look like:
+
+Maybe you should visit [Babraham Bioinformatics](https://www.bioinformatics.babraham.ac.uk)
+to learn more about bioinformatics?
+
 ### Images and Videos
 The web is a highly visual medium, and images and videos are a core
 part of many web sites.  In HTML both images and videos are a form of link,
@@ -303,48 +348,3 @@ video will appear alongside the rest of your content.
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qPxl2hflG9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ```
-
-### Links
-Navigation around the WWW is built on the concept of hyperlinks.  These are
-a way that your viewers can jump from one page to another, either within your
-own site, or going to somewhere completely different elsewhere on the web.
-
-Links are used in serveral places within HTML.  We will see in a second that
-links form the basis for including images and videos within pages, and we'll
-also see that links are used to add styling to pages through the use of CSS.
-They are a general mechanism to assemble content from different places into
-the final document which the user sees.
-
-In this section though we are going to focus on navigation links - pieces of
-text which cause you to navigate away from the current HTML document and go
-somewhere else on the web when you click on them.
-
-Navigation links are constructed using anchor tags ```<a> ... </a>```.  Between
-the tags you can put whatever content you like - most commonly text, but it
-could equally be an image.  The point is that whatever comes between the tags
-is the content which will activate the link when you click on it.
-
-The anchor tags require you to provide some additional information though,
-specifically they need to know where the link should take the user, and this
-is achieved through the use of the href attribute.  The value for this attribute
-will be the location the link points to and must be a URL (web address).  These
-URLs can either be complete web addresses such as ```https://www.google.com```
-or, if you're just pointing to somewhere else within your own site they can
-be locations relative to the current page, eg ```../HTML_and_CSS/index.html```
-(that would be the folder above this one (```..```), then down into the ```HTML_and_CSS```
-folder, and then link to the index.html document).
-
-A complete link would therefore look something like this;
-
-```
-<p>
-  Maybe you should visit
-  <a href="https://www.bioinformatics.babraham.ac.uk">Babraham Bioinformatics</a>
-  to learn more about bioinformatics?
-</p>
-```
-
-..and it would look like:
-
-Maybe you should visit [Babraham Bioinformatics](https://www.bioinformatics.babraham.ac.uk)
-to learn more about bioinformatics?
