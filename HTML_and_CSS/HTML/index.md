@@ -267,5 +267,40 @@ Here is a simple example:
 </p>
 ```
 
+Video can theoretically be handled in a similar way by making use of the ```<video>```
+tag.  This again requires that the video you want to embed is able to be directly
+accessed somewhere on the web already.
+
+One unusual aspect of the ```<video>``` tag is that you can specify multiple
+sources for it in different formats so that you can support a wider range of
+devices which may only be able to play some of the large number of different
+video file formats which exist.
+
+```
+<p>
+  <video>
+    <source src="movie.mp4" type="video/mp4">
+  </video>
+</p>
+```
+
+In practice, although you can serve video in this way it's quite uncommon to
+do this, since it means that you need to have the bandwidth to serve the
+video content yourself.  Far more commonly you will see sites using large
+public video repositories such as YouTube or Vimeo and then embedding their
+video players within their HTML pages.  All of these video sites will have
+an option to generate some HTML code to allow you to embed a video within
+an HTML page as part of their standard player.
+
+For example, within the YouTube sharing options is an option to embed the
+video, which gives you something like this:
+
+![YouTube embedding code](youtube_embed.png)
+
+..and if you simply copy and paste that code into your HTML page then the
+video will appear alongside the rest of your content.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qPxl2hflG9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 ### Links
