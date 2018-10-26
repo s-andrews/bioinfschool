@@ -230,6 +230,42 @@ Thus, the overall structure of a table would look like this:
 
 
 ### Images and Videos
+The web is a highly visual medium, and images and videos are a core
+part of many web sites.  In HTML both images and videos are a form of link,
+meaning that the images and videos aren't actually part of the page you're
+viewing, but are separately available content which is dynamically inserted
+into the page by the web browser.  What you are doing in the HTML is therefore
+pointing part of your document to another location on the www where the
+multimedia content can be obtained.
+
+This means that the first problem you have is that you need to either find
+the image you want to use somewhere available on the internet already, or you
+need to need to make the images you want to use available yourself.  Often
+this is as simple as uploading the image files alongside your HTML documents
+in your web server root.
+
+In the example below we're going to look at inserting our group logo into
+a document.  We're assuming for the purposes of this example that we've
+copied the image file ```babraham.png``` into the same directory on our
+web server as the HTML document we're writing.
+
+![Babraham Bioinformatics Logo][babraham.png]
+
+To insert this into the document we need to use an ```<img>``` tag.  We will
+need to provide an option to this tag though to say where it can be found.  This
+is set using the ```src``` parameter of the tag.
+
+Images are inline content so ```<img>``` tags should generally be encosed within
+some other tag type such as ```<p>``` or maybe ```<td>``` if the image is going
+into a table.
+
+Here is a simple example:
+
+```
+<p>
+  <img src="babraham.png">
+</p>
+```
 
 
 ### Links
