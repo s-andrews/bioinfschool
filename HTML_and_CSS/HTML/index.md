@@ -348,3 +348,82 @@ video will appear alongside the rest of your content.
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qPxl2hflG9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ```
+
+Putting it all together
+-----------------------
+
+Taking what we have learned in the sections above we can now construct an
+entire document which can mark up all of the content for a page.  Here is a
+more complete example.
+
+First we start with the page header.
+
+```
+<html>
+  <head>
+    <title>A complete web page</title>
+  </head>
+
+  <body>
+```
+
+We've opened the ```<html>``` and ```<body>``` tags and we will therefore
+need to remember to close them again at the end of the document.
+
+Now we can include some content.  We'll start with a simple header and some
+text.
+
+```
+    <h1>Introduction</h1>
+
+    <p>
+      In this section we're going to introduce the topic we want to talk
+      about.  This is just plain text, although we might want to make
+      some parts look <strong>more important</strong> than others.
+    </p>
+```
+
+We can include an image.  This time taken from elsewhere on the web
+
+```
+    <p>
+      <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.svg">
+    </p>
+```
+
+
+Now a list.
+
+```
+    <p>
+      Things we are going to learn include:
+    </p>
+
+    <ul>
+      <li>Writing HTML documents</li>
+      <li>Adding appropriate markup</li>
+      <li>Linking to other web locations</li>
+    </ul>
+```
+
+Now maybe we should link somewhere else.
+
+```
+    <p>
+      For more information about HTML you might want to look at the
+      excellent <a href="https://www.w3schools.com/">W3Schools</a>
+      website.
+    </p>
+```
+
+
+Finally, we clean up by closing the ```<body>``` and ```<html>``` tags we
+opened at the top of the document.  if you were writing this document yourself
+then you should always write the closing tag as soon as you write the opening
+tag so that you don't end up with mismatched tags in your document which might
+cause the web browser to reject or misinterpret it.
+
+```
+  </body>
+</html>
+```
