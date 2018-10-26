@@ -181,7 +181,55 @@ The equivalent unordered list would be:
 
 
 ### Tables
+Tables are one of the more complex items to render in HTML, but they are
+very versatile and useful for presenting information.
+
+Tables have a 3 level structure within HTML:
+
+1. The table itself represented by ```<table> ... </table>``` tags
+
+2. A table row representing a single row of content, and denoted by ```<tr> ... </tr>```
+tags
+
+3. Table data.  The data for one cell in the table.  There are two types of
+tag you can use for this, either ```<td> ... </td>``` for normal data, or if
+you're putting a heading on the table you can use ```<th> ... </th>``` for those
+cells which will then be rendered in a more emphasised way.
+
+It is expected that each row of the table will have the same number of
+data cells in it, and the browser will take care of making sure that these
+are all correctly aligned with each other.
+
+Thus, the overall structure of a table would look like this:
+
+```
+<table>
+  <tr>
+    <th>First heading</th>
+    <th>Second heading</th>
+  </tr>
+
+  <tr>
+    <td>Content 1</td>
+    <td>Content 2</td>
+  </tr>
+
+  <tr>
+    <td>Content 3</td>
+    <td>Content 4</td>
+  </tr>
+</table>
+```
+
+..and this will look like:
+
+|First heading | Second heading |
+|--------------|----------------|
+|Content 1     | Content 2      |
+|Content 3     | Content 4      |
+
 
 ### Images and Videos
+
 
 ### Links
