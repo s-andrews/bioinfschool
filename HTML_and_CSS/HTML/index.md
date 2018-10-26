@@ -133,6 +133,52 @@ correct structure for using these tags would be.
 
 
 ### Lists
+It's pretty common to want to put lists of information into a
+document.  There are two kinds of lists within HTML, ordered
+lists and unordered (bulletted) lists.  Each of these comprises its own
+block within HTML and isn't contained within a paragraph.
+
+Lists themselves are split into two components, each with its own set of
+HTML tags.  You have the list itself.  This is defined by ```<ol> ... </ol>```
+for ordered lists, and ```<ul> ... </ul>``` for unordered lists.
+
+Inside the main list tags you can then have any number of list *items*. Each
+of these is a single element within the list and is defined by a pair
+of ```<li> ... </li>``` tags.  The list item tags are the same whether you're
+in an ordered or unordered list.
+
+Putting this together, a typical ordered list would look like this.
+
+```{html}
+<ol>
+  <li>First element</li>
+  <li>Second element</li>
+  <li>Third element</li>
+</ol>
+```
+
+Once rendered this will look like:
+
+1. First element
+2. Second element
+3. Third element
+
+The equivalent unordered list would be:
+
+```{html}
+<ul>
+  <li>First element</li>
+  <li>Second element</li>
+  <li>Third element</li>
+</ul>
+```
+
+..and would look like:
+
+* First element
+* Second element
+* Third element
+
 
 ### Tables
 
