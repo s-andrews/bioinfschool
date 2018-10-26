@@ -300,7 +300,8 @@ video, which gives you something like this:
 ..and if you simply copy and paste that code into your HTML page then the
 video will appear alongside the rest of your content.
 
+```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qPxl2hflG9Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+```
 
 ### Links
